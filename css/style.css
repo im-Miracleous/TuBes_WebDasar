@@ -126,6 +126,12 @@ main {
     color: black;
 }
 
+.content {
+    background-color: greenyellow;
+    margin: 0;
+    padding: 20px;
+}
+
 /* BREAKPOINTS */
 @media (max-width: 1120px) {
     .header {
@@ -178,5 +184,13 @@ main {
     .navbar ul li a {
         font-size: 1.1rem;
         margin: 1.5rem 0;
+    }
+
+    .banner {
+        height: 84vh;
+    }
+
+    .banner-label {
+        width: 70vw;
     }
 }
