@@ -16,6 +16,7 @@ body {
     background-position: center;
 }
 
+/* HEADER STYLING */
 .header {
     position: fixed;
     top: 0;
@@ -35,7 +36,6 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: red;
     background: rgba(0, 0, 0, .1);
     backdrop-filter: blur(50px);
     z-index: -1;
@@ -76,6 +76,54 @@ body {
     color: #FFF;
     cursor: pointer;
     display: none;
+}
+
+/* MAIN PAGE STYLING */
+main {
+    display: block;
+    position: absolute;
+    top: 6.9em;
+    left: 0;
+    width: 100vw;
+}
+
+.banner {
+    height: 87.2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-label {
+    color: white;
+    background: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(50px);
+    padding: 50px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.banner-title {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.banner-button > button {
+    background: rgba(0, 0, 0, .1);
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 3px solid greenyellow;
+    margin-top: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+}
+
+.banner-button > button:hover {
+    background: greenyellow;
+    border: 3px solid greenyellow;
+    color: black;
 }
 
 /* BREAKPOINTS */
