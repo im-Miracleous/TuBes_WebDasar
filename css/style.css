@@ -54,6 +54,29 @@ body {
     white-space: nowrap;
 }
 
+.navbar ul li {
+    position: relative;
+}
+
+.navbar ul li ul.dropdown-menu {
+    position: absolute;
+    margin-top: 2.55rem;
+    padding: 1.3rem 10%;
+    left: -0.4rem;
+    top: 100%;
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    background: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(50px);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+.navbar ul li:hover ul.dropdown-menu {
+    display: flex;
+}
+
 .navbar ul li a {
     padding: 10px 25px;
     font-size: 1.15rem;
@@ -64,9 +87,19 @@ body {
     transition: 0.2s;
 }
 
+#dropdown-icon {
+    color: #FFF;
+}
+
 .navbar ul li a:hover {
     color: #11101b;
     background: #FFF;
+}
+
+.navbar ul li a:hover #dropdown-icon {
+    color: #11101b;
+    transform: rotate(180deg);
+    transition: color 0.2s, transform 0.2s;
 }
 
 .icons {
@@ -124,6 +157,7 @@ main {
     background: greenyellow;
     border: 3px solid greenyellow;
     color: black;
+    cursor: pointer;
 }
 
 .content {
