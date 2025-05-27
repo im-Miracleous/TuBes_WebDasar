@@ -18,13 +18,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const dropdownLi = document.querySelector('.has-dropdown');
     const dropdownLink = dropdownLi.querySelector('a');
 
-    dropdownLink.addEventListener('click', function(e) {
+    dropdownLink.addEventListener('mouseover', function(e) {
         e.preventDefault(); // Prevent navigation
         dropdownLi.classList.toggle('open');
     });
 
     // Optional: Close dropdown when clicking outside
-    document.addEventListener('click', function(e) {
+    document.addEventListener('mouseover', function(e) {
         if (!dropdownLi.contains(e.target)) {
             dropdownLi.classList.remove('open');
         }
