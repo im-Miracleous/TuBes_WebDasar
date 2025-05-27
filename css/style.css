@@ -3,10 +3,13 @@
 * {
     margin: 0;
     padding: 0;
-    list-style: none;
     text-decoration: none;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -52,6 +55,7 @@ body {
     display: inline-flex;
     gap: 10px;
     white-space: nowrap;
+    list-style: none;
 }
 
 .navbar ul li a {
@@ -108,7 +112,7 @@ main {
     font-weight: 700;
 }
 
-.banner-button > button {
+.banner-button button {
     background: rgba(0, 0, 0, .1);
     color: white;
     font-size: 1rem;
@@ -120,7 +124,7 @@ main {
     transition: 0.2s;
 }
 
-.banner-button > button:hover {
+.banner-button button:hover {
     background: greenyellow;
     border: 3px solid greenyellow;
     color: black;
@@ -193,4 +197,63 @@ main {
     .banner-label {
         width: 70vw;
     }
+}
+
+/* RECIPES PAGE */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.kotak {
+    border-radius: 20px;
+    margin: 10px;
+    padding: 20px;
+    background-color: rgb(255, 220, 130);
+    text-align: center;
+}
+
+.kotak p {
+    font-weight: bold;
+    margin: 20px;
+}
+
+.kotak button {
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: gray;
+    color: yellow;
+    transition: 0.5s;
+}
+
+.kotak button:hover {
+    background-color: green;
+}
+
+.kotak img {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+
+@media (max-width: 800px) {
+    .kotak img {
+        width: 100%;
+        height: 10rem;
+    }
+}
+
+.content {
+    font-size: 1.5rem;
+}
+
+/* BATAGOR */
+.content-list {
+    margin-left: 20px;
 }
