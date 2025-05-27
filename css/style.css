@@ -65,7 +65,11 @@ body {
     left: -0.4rem;
     top: 100%;
     text-align: center;
-    display: none;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    display: flex;
     flex-direction: column;
     gap: 20px;
     background: rgba(0, 0, 0, .1);
@@ -73,8 +77,10 @@ body {
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
 
-.navbar ul li:hover ul.dropdown-menu {
-    display: flex;
+.navbar ul li.open ul.dropdown-menu {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
 }
 
 .navbar ul li a {
@@ -164,6 +170,18 @@ main {
     background-color: greenyellow;
     margin: 0;
     padding: 20px;
+}
+
+.judul, .isi {
+    margin: 2rem;
+    text-align: justify;
+}
+
+.floated-img {
+    float: right;
+    width: 20rem;
+    margin: 1rem 2rem auto;
+    border-radius: 12px;
 }
 
 /* BREAKPOINTS */
