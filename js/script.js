@@ -1,6 +1,6 @@
 const hamburger = document.querySelector("#menu-icon");
         const closeIcon = document.querySelector("#close-icon");
-        const navBar = document.querySelector(".navbar");
+        const navBar = document.querySelector(".navigation-bar");
 
         hamburger.onclick = function() {
             navBar.classList.toggle("active");
@@ -29,4 +29,21 @@ document.addEventListener('DOMContentLoaded', function() {
             dropdownLi.classList.remove('open');
         }
     });
+
+    // Smooth scroll to .judul when 'Show me' button is clicked
+    const showMeBtn = document.querySelector('.banner-button > button');
+    const judul = document.querySelector('.judul');
+    if (showMeBtn && judul) {
+        showMeBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            // Get header height
+            const header = document.querySelector('.header');
+            const headerHeight = header ? header.offsetHeight : 0;
+            // Get element position
+            const judulRect = judul.getBoundingClientRect();
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const targetY = judulRect.top + scrollTop - headerHeight - 10; // 10px extra spacing
+            window.scrollTo({ top: targetY, behavior: 'smooth' });
+        });
+    }
 });

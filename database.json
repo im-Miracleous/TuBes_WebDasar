@@ -1,0 +1,28 @@
+[
+    {
+        "nama-makanan": "Batagor",
+        "asal-makanan": "Bandung, Jawa Barat",
+        "deskripsi": "Batagor adalah makanan khas Bandung yang terbuat dari tahu dan ikan tenggiri yang digoreng, disajikan dengan bumbu kacang.",
+        "bahan": ["Tahu", "Ikan tenggiri", "Bumbu kacang"],
+        "cara-membuat": "Campur tahu dan ikan tenggiri, bentuk bulatan, goreng hingga kecokelatan, sajikan dengan bumbu kacang.",
+        "gambar": "https://example.com/batagor.jpg"
+    },
+    
+    {
+        "nama-makanan": "Lotek",
+        "asal-makanan": "Bandung, Jawa Barat",
+        "deskripsi": "Lotek adalah salad sayuran yang disiram dengan bumbu kacang, biasanya terdiri dari sayuran segar seperti kangkung, tauge, dan mentimun.",
+        "bahan": ["Kangkung", "Tauge", "Mentimun", "Bumbu kacang"],
+        "cara-membuat": "Rebus sayuran, haluskan bumbu kacang, campurkan semua bahan, dan sajikan.",
+        "gambar": "https://example.com/lotek.jpg"
+    },
+
+    {
+        "nama-makanan": "Karedok",
+        "asal-makanan": "Bandung, Jawa Barat",
+        "deskripsi": "Karedok adalah salad sayuran mentah yang disiram dengan bumbu kacang, biasanya terdiri dari mentimun, kol, dan tauge.",
+        "bahan": ["Mentimun", "Kol", "Tauge", "Bumbu kacang"],
+        "cara-membuat": "Potong sayuran, haluskan bumbu kacang, campurkan semua bahan, dan sajikan.",
+        "gambar": "https://example.com/karedok.jpg"
+    }
+]
