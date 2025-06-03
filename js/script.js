@@ -47,3 +47,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+var myCarousel = document.querySelector('#carouselExampleAutoplaying');
+var carousel = new bootstrap.Carousel(myCarousel, {
+  interval: 5000 // 5 seconds
+});
