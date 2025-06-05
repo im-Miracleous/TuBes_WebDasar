@@ -1,54 +1,52 @@
-const hamburger = document.querySelector("#menu-icon");
-        const closeIcon = document.querySelector("#close-icon");
-        const navBar = document.querySelector(".navigation-bar");
+$(document).ready(function() {
+    const $hamburger = $('#menu-icon');
+    const $closeIcon = $('#close-icon');
+    const $navBar = $('.navigation-bar');
 
-        hamburger.onclick = function() {
-            navBar.classList.toggle("active");
-            hamburger.style.display = navBar.classList.contains("active") ? "none" : "inline-block";
-            closeIcon.style.display = navBar.classList.contains("active") ? "inline-block" : "none";
-        }
-
-        closeIcon.onclick = function () {
-            navBar.classList.remove("active");
-            hamburger.style.display = "inline-block";
-            closeIcon.style.display = "none";
-        };
-
-document.addEventListener('DOMContentLoaded', function() {
-    const dropdownLi = document.querySelector('.has-dropdown');
-    const dropdownLink = dropdownLi.querySelector('a');
-
-    dropdownLink.addEventListener('mouseover', function(e) {
-        e.preventDefault(); // Prevent navigation
-        dropdownLi.classList.toggle('open');
+    $hamburger.on('click', function() {
+        $navBar.toggleClass('active');
+        $hamburger.css('display', $navBar.hasClass('active') ? 'none' : 'inline-block');
+        $closeIcon.css('display', $navBar.hasClass('active') ? 'inline-block' : 'none');
     });
 
-    // Optional: Close dropdown when clicking outside
-    document.addEventListener('mouseover', function(e) {
-        if (!dropdownLi.contains(e.target)) {
-            dropdownLi.classList.remove('open');
+    $closeIcon.on('click', function() {
+        $navBar.removeClass('active');
+        $hamburger.css('display', 'inline-block');
+        $closeIcon.css('display', 'none');
+    });
+
+    const $dropdownLi = $('.has-dropdown');
+    const $dropdownLink = $dropdownLi.children('a');
+
+    $dropdownLink.on('mouseover', function(e) {
+        e.preventDefault();
+        $dropdownLi.toggleClass('open');
+    });
+
+    $(document).on('mouseover', function(e) {
+        if (!$dropdownLi.is(e.target) && $dropdownLi.has(e.target).length === 0) {
+            $dropdownLi.removeClass('open');
         }
     });
 
-    // Smooth scroll to .judul when 'Show me' button is clicked
-    const showMeBtn = document.querySelector('.banner-button > button');
-    const judul = document.querySelector('.judul');
-    if (showMeBtn && judul) {
-        showMeBtn.addEventListener('click', function(e) {
+    // Smooth Scroll
+    const $showMeBtn = $('.banner-button > button');
+    const $judul = $('.judul').first();
+    if ($showMeBtn.length && $judul.length) {
+        $showMeBtn.on('click', function(e) {
             e.preventDefault();
-            // Get header height
-            const header = document.querySelector('.header');
-            const headerHeight = header ? header.offsetHeight : 0;
-            // Get element position
-            const judulRect = judul.getBoundingClientRect();
-            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            const targetY = judulRect.top + scrollTop - headerHeight - 10; // 10px extra spacing
-            window.scrollTo({ top: targetY, behavior: 'smooth' });
+            const $header = $('.header');
+            const headerHeight = $header.length ? $header.outerHeight() : 0;
+            const targetY = $judul.offset().top - headerHeight - 10;
+            $('html, body').animate({ scrollTop: targetY }, 600);
         });
     }
-});
 
-var myCarousel = document.querySelector('#carouselExampleAutoplaying');
-var carousel = new bootstrap.Carousel(myCarousel, {
-  interval: 5000 // 5 seconds
+    // Autoplay Bootstrap Carousel
+    var myCarousel = document.querySelector('#carouselExampleAutoplaying');
+    if (myCarousel) {
+        var carousel = new bootstrap.Carousel(myCarousel, {
+            interval: 5000
+        });
+    }
 });
