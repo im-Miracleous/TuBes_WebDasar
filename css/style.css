@@ -191,6 +191,7 @@ main {
   background: greenyellow;
   border: 3px solid greenyellow;
   color: black;
+  cursor: pointer;
 }
 
 .content {
@@ -246,6 +247,60 @@ main {
     scale: 1;
   }
 }
+
+/* RECIPE PAGES */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.kotak {
+  border-radius: 20px;
+  margin: 10px;
+  padding: 20px;
+  height: fit-content;
+  background-color: rgb(255, 220, 130);
+  text-align: center;
+}
+
+.kotak p {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 20px;
+}
+
+.kotak button {
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: gray;
+    color: yellow;
+    transition: 0.5s;
+  }
+
+.kotak button:hover {
+    background-color: green;
+    cursor: pointer;
+}
+.kotak img {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+
+#daftar-makanan {
+  font-size: 2rem;
+  text-align: center;
+  margin: 20px 0;
+}
+
+
+
 
 /* BREAKPOINTS */
 @media (max-width: 600px) {
@@ -309,19 +364,19 @@ main {
   .navigation-bar ul li ul.dropdown-menu {
     left: 175px;
     top: -130px;
+  }
 
-    .navigation-bar ul li a {
-      font-size: 1.1rem;
-      margin: 1.5rem 0;
-    }
+  .navigation-bar ul li a {
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+  }
 
-    .banner {
-      height: 84vh;
-    }
+  .banner {
+    height: 84vh;
+  }
 
-    .banner-label {
-      width: 70vw;
-    }
+  .banner-label {
+    width: 70vw;
   }
 
   /* RECIPES PAGE */
@@ -332,53 +387,20 @@ main {
     grid-template-rows: repeat(4, 1fr);
   }
 
-  .kotak {
-    border-radius: 20px;
-    margin: 10px;
-    padding: 20px;
-    background-color: rgb(255, 220, 130);
-    text-align: center;
-  }
-
   .kotak p {
-    font-weight: bold;
-    margin: 20px;
-  }
-
-  .kotak button {
-    font-weight: bold;
-    padding: 10px 25px;
-    border-radius: 20px;
-    border: 1px solid black;
-    background-color: gray;
-    color: yellow;
-    transition: 0.5s;
-  }
-
-  .kotak button:hover {
-    background-color: green;
+    font-size: 1.1rem;
   }
 
   .kotak img {
     width: 100%;
-    height: 30rem;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 20px;
-  }
-
-  @media (max-width: 800px) {
-    .kotak img {
-      width: 100%;
-      height: 10rem;
-    }
+    height: 10rem;
   }
 
   .content {
     font-size: 1.5rem;
   }
 
-  /* BATAGOR */
+  /* RECIPE PAGES */
   .content-list {
     margin-left: 20px;
   }
