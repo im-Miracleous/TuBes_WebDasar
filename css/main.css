@@ -89,7 +89,7 @@ body {
   top: 100%;
   text-align: center;
   opacity: 0;
-  pointer-events: auto;
+  pointer-events: auto; /* ini buat setting biar walau ada gap bisa hover */
   transform: translateY(20px);
   transition: opacity 0.3s ease, transform 0.3s ease;
   display: flex;
@@ -98,6 +98,7 @@ body {
   background: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(50px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
 .navigation-bar ul li.open ul.dropdown-menu {
@@ -150,10 +151,8 @@ body {
 main {
   display: block;
   width: 100vw;
-  margin-top: 6.8em;
-  /* Add spacing below header */
+  margin: 6.8em 0;
   min-height: calc(100vh - 6.9em - 5rem);
-  /* Ensure main fills viewport minus header and footer */
 }
 
 .banner {
@@ -205,7 +204,8 @@ main {
   padding: 20px;
 }
 
-.judul, .subjudul {
+.judul,
+.subjudul {
   margin-bottom: 2rem;
   text-align: center;
 }
@@ -227,14 +227,15 @@ main {
 }
 
 .white-bg {
-    background-color: white;
+  background-color: white;
 }
 
 #gallery {
-    margin-top: 1.5rem;
+  margin-top: 1.5rem;
 }
 
-#news .judul, #news .subjudul {
+#news .judul,
+#news .subjudul {
   margin-bottom: 0;
 }
 
@@ -243,7 +244,7 @@ main {
   display: flex;
   background: #fff;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   overflow: hidden;
   margin: 2rem auto;
   max-width: 950px;
@@ -313,7 +314,7 @@ main {
   max-width: 950px;
   font-size: 1.1rem;
   font-weight: 500;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   transition: background 0.2s;
   text-decoration: none;
 }
@@ -328,7 +329,8 @@ main {
   .news-card {
     flex-direction: column;
   }
-  .news-image, .news-content {
+  .news-image,
+  .news-content {
     flex: unset;
     width: 100%;
   }

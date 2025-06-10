@@ -57,25 +57,86 @@
                 <h2>Sudirman Street</h2>
                 <p>Dengan tema kombinasi klasik ala chinatown dan modern melalui desain mural dan tata pencahayaan yang apik, suasana di Sudirman Street terutama pada malam hari merupakan tempat yang nyaman untuk hang-out ataupun berkumpul bersama teman, dan sangat representatif karena dikelola secara cukup profesional, dimana pengamen dan pedagang asongan dilarang memasuki kawasan ini. Sudirman Street memang memberikan kesan tersendiri bagi pengunjung kuliner kota Bandung dan juga kota-kota lain yang ingin mencari alternatif makanan baik halal maupun non-halal, didukung oleh suasana yang menyenangkan dengan penataan pernik-pernik lampu dan tempat makan yang bersih.</p>
                 <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2d/d8/ba/fb/exquisite.jpg?w=900&h=500&s=1" alt="Sudirman Street">
+                <button data-map="https://maps.app.goo.gl/RYrV28C8avM2gvF6A">View More</button>
                 
             </div>
             <div class="places-item">
                 <h2>Dapoer Pandan Wangi</h2>
                 <p>Dapoer Pandan Wangi adalah sebuah restoran Sunda yang terletak di Bandung, Indonesia, yang terkenal dengan hidangan khas Sunda dan suasana yang nyaman. Restoran ini memiliki dua lokasi di Bandung, yaitu di Jl. Patuha 38 dan Jl. Terusan Pasirkoja 380. Restoran berkonsep Sunda ini mempunyai bangunan yang berbentuk rumah tradisional Jawa Barat seperti Julang Ngapak dan Capit Gunting. Saat masuk ke dalam restoran, pengunjung akan langsung disuguhkan oleh lagu Sunda dan gemericik air di kolam kan. Hal ini akan menambah suasana nyaman dan homey di restoran. </p>
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtoOImERl1nEggz4Wfdxq-nurmWY7Cmvz6lw&s" alt="Dapoer Pandan Wangi">
+                <button data-map="https://maps.app.goo.gl/hYHCn42EqQ1qdULa8">View more</button>
             </div>
             <div class="places-item">
                 <h2>Sei Lelebo</h2>
                 <p>Se'i Lelebo adalah sebuah tempat makan terkenal di Bandung yang menyajikan berbagai menu olahan babi, terutama Se'i Babi (daging babi asap) dengan bumbu khas Indonesia seperti Woku,. Nama "Lelebo" juga merujuk pada nama pemilik/pemilik usaha tersebut. Se'i Lelebo memiliki beberapa lokasi cabang, termasuk di Punclut Raya dan Ciumbuleuit,. Mereka juga dikenal dengan menu seperti Suikiaw (pangsit rebus dengan olahan babi ala Lelebo) dan berbagai jenis babi seperti Gohyong Babi Udang Se'i Lelebo.</p>
                 <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/34/56/1f/getlstd-property-photo.jpg?w=900&h=500&s=1" alt="Sei Lelebo">
+                <button data-map="https://maps.app.goo.gl/7gHcpMGSB6dnvDVn6">View more</button>
             </div>
             <div class="places-item">
                 <h2>Warung Nasi Ampera</h2>
-                <p>Warung Nasi Ampera adalah sebuah rumah makan masakan Sunda yang terkenal dan sudah beroperasi sejak tahun 1960-an. Warung Nasi Ampera memiliki nama yang disingkat dari "Amanat Penderitaan Rakyat". Mereka dikenal dengan pelayanan yang cepat, harga terjangkau, dan berbagai menu khas Sunda seperti nasi liwet, nasi timbel, ayam bakar, dan lain-lain. Warung Nasi Ampera juga memiliki beberapa cabang di berbagai daerah, termasuk di Bandung.</p>
+                <p>Warung Nasi Ampera adalah sebuah rumah makan masakan Sunda yang terkenal dan sudah beroperasi sejak tahun 1960-an. Warung Nasi Ampera memiliki nama yang disingkat dari "Amanat Penderitaan Rakyat". Mereka dikenal dengan pelayanan yang cepat, harga terjangkau, dan berbagai menu khas Sunda seperti nasi liwet, nasi timbel, ayam bakar, dan lain-lain. Warung Nasi Ampera juga memiliki beberapa cabang di berbagai daerah, termasuk di Bandung (untuk maps dibawah, akan mengambil contoh cabang di Pasteur).</p>
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmpYlzJn6ivPwv9PhrIlPUkYbQ2-g8LpPSqw&s" alt="Warung Nasi Ampera">
+                <button data-map="https://maps.app.goo.gl/Rsau2gpGCF16d4Zz9">View more</button>
             </div>
         </div>
      </main>
 
+    <dialog id="places-dialog" style="display:none;">
+        <h2 id="dialog-title"></h2>
+        <img id="dialog-img" src="" alt="" style="max-width:100%;margin-bottom:1rem;">
+        <p id="dialog-text"></p>
+        <button id="open-map">View on Maps</button>
+        <button id="dialog-close">Close</button>
+    </dialog>
+
+    <!-- FOOTER SECTION -->
+     <footer>
+        <p>&copy; 2025 Oemah Soenda. All rights reserved.</p>
+     </footer>
+
+    <script>
+        // Always close the dialog on page load to prevent it from being stuck open
+        document.addEventListener('DOMContentLoaded', function() {
+            var dlg = document.getElementById('places-dialog');
+            if (dlg && typeof dlg.close === 'function') dlg.close();
+            dlg.removeAttribute('open');
+            dlg.style.display = 'none';
+        });
+        $(function() {
+            $('.places-item button').on('click', function() {
+                var $item = $(this).closest('.places-item');
+                var title = $item.find('h2').text();
+                var text = $item.find('p').text();
+                var img = $item.find('img').attr('src');
+                var imgAlt = $item.find('img').attr('alt');
+                var mapUrl = $item.data('map') || $(this).data('map');
+                $('#open-map').off('click').on('click', function() {
+                    if (mapUrl) {
+                        // Open the map URL in a new tab
+                        window.open(mapUrl, '_blank');
+                    }
+                })
+
+                $('#dialog-title').text(title);
+                $('#dialog-text').text(text);
+                $('#dialog-img').attr('src', img).attr('alt', imgAlt);
+
+                var dlg = document.getElementById('places-dialog');
+                dlg.classList.remove('dialog-hide');
+                dlg.style.display = '';
+                dlg.showModal();
+            });
+
+            $('#dialog-close').on('click', function() {
+                var dlg = document.getElementById('places-dialog');
+                dlg.classList.add('dialog-hide');
+                setTimeout(function() {
+                    dlg.close();
+                    dlg.style.display = 'none';
+                    dlg.classList.remove('dialog-hide');
+                }, 220);
+            });
+        });
+    </script>
 </body>
 </html>

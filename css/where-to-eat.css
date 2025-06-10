@@ -110,11 +110,116 @@
   background-color: #219150;
 }
 
+.places-item button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #27ae60;
+  color: white;
+  border-radius: 50px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.places-item button:hover {
+  background-color: #219150;
+}
+
+dialog#places-dialog {
+  border: none;
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 90vw;
+  max-height: 80vh;
+  text-align: center;
+  overflow: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+dialog#places-dialog::backdrop {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+dialog#places-dialog img {
+  max-width: 100%;
+  max-height: 220px;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+dialog#places-dialog p {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 1.5rem;
+}
+
+#open-map, #dialog-close {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 0.5rem;
+  padding: 0.5rem 2rem;
+  border-radius: 8px;
+  border: none;
+  background: #27ae60;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+#open-map:hover, #dialog-close:hover {
+  background: #219150;
+}
+
+/* Dialog animation */
+dialog#places-dialog[open] {
+  animation: dialog-fade-in 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes dialog-fade-in {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+/* Hide animation using a class */
+dialog#places-dialog.dialog-hide {
+  animation: dialog-fade-out 0.25s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes dialog-fade-out {
+  from {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translate(-50%, -60%) scale(0.95);
+  }
+}
+
 @media (max-width: 920px) {
   #rekomendasi-tempat {
-  font-size: 2rem;
-  text-align: center;
-  padding: 2rem 0 2rem;
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem 0 2rem;
   }
 
   .places-container {
