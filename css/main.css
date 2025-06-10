@@ -150,7 +150,7 @@ body {
 main {
   display: block;
   width: 100vw;
-  margin-top: 8.5em;
+  margin-top: 6.8em;
   /* Add spacing below header */
   min-height: calc(100vh - 6.9em - 5rem);
   /* Ensure main fills viewport minus header and footer */
@@ -241,6 +241,13 @@ main {
   margin-bottom: 2rem;
 }
 
+footer {
+  background-color: #27ae60;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
 @keyframes appear {
   from {
     opacity: 0;
@@ -251,176 +258,6 @@ main {
     opacity: 1;
     scale: 1;
   }
-}
-
-/* RECIPE PAGES */
-
-#daftar-makanan {
-  font-size: 2rem;
-  text-align: center;
-  margin: 20px 0;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-}
-
-.kotak {
-  border-radius: 20px;
-  margin: 10px;
-  padding: 20px;
-  height: fit-content;
-  background-color: rgb(255, 220, 130);
-  text-align: center;
-}
-
-.kotak p {
-  font-weight: bold;
-  font-size: 2rem;
-  margin: 20px;
-}
-
-.kotak button {
-  font-weight: bold;
-  padding: 10px 25px;
-  border-radius: 20px;
-  border: 1px solid black;
-  background-color: gray;
-  color: yellow;
-  transition: 0.5s;
-}
-
-.kotak button:hover {
-  background-color: green;
-  cursor: pointer;
-}
-.kotak img {
-  width: 100%;
-  height: 30rem;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 20px;
-}
-
-/* WHERE TO EAT */
-
-#rekomendasi-tempat {
-  font-size: 2rem;
-  text-align: center;
-  padding: 2rem 0;
-}
-
-.places-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.places-item {
-  background-color: rgba(255, 255, 255, 0.92);
-  border-radius: 16px;
-  padding: 1.2rem 1rem 1.5rem 1rem;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  min-height: 320px;
-  max-width: 100%;
-  box-sizing: border-box;
-}
-
-.places-item-img-wrapper {
-  width: 100%;
-  max-width: 260px;
-  height: 160px;
-  margin: 0 auto 1rem auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #e0e0e0;
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-.places-item img {
-  width: 400px;
-  height: 300px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 12px;
-  display: block;
-  margin: 0;
-  background: none;
-}
-
-.places-item-text-wrapper {
-  width: 100%;
-  max-width: 260px;
-  min-height: 90px;
-  margin: 0 auto 0.5rem auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  overflow: hidden;
-  padding: 0.5rem 0.5rem 0 0.5rem;
-  box-sizing: border-box;
-}
-
-.places-item h3 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin: 0.25rem 0 0.25rem 0;
-  text-align: center;
-  line-height: 1.2;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.places-item p {
-  font-size: 0.98rem;
-  color: #333;
-  margin: 0.25rem 0 0.25rem 0;
-  text-align: center;
-  line-height: 1.4;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  line-clamp: 3;
-  -webkit-box-orient: vertical;
-  white-space: normal;
-}
-
-.places-item a {
-  margin-top: auto;
-  padding: 10px 20px;
-  background-color: #27ae60;
-  color: white;
-  border-radius: 50px;
-  text-align: center;
-  text-decoration: none;
-  transition: background 0.3s;
-}
-
-.places-item a:hover {
-  background-color: #219150;
-}
-
-/* ABOUT CSS */
-
-.judul {
-  text-align: left;
-  margin: 2rem;
 }
 
 /* BREAKPOINTS */
@@ -499,104 +336,4 @@ main {
   .banner-label {
     width: 70vw;
   }
-
-  /* RECIPES PAGE */
-
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-  }
-
-  .kotak p {
-    font-size: 1.1rem;
-  }
-
-  .kotak img {
-    width: 100%;
-    height: 10rem;
-  }
-
-  .content {
-    font-size: 1.5rem;
-  }
-
-  /* RECIPE PAGES */
-  footer {
-    background-color: #27ae60;
-    color: white;
-    padding: 20px;
-    text-align: center;
-  }
-
-  /* PLACES PAGE */
-  .places-container {
-    display: flex;
-    flex-direction: column;
-    width: 70vw;
-  }
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-}
-
-.kotak {
-  border-radius: 20px;
-  margin: 10px;
-  padding: 20px;
-  background-color: rgb(255, 220, 130);
-  text-align: center;
-}
-
-.kotak p {
-  font-weight: bold;
-  margin: 20px;
-}
-
-.kotak button {
-  font-weight: bold;
-  padding: 10px 25px;
-  border-radius: 20px;
-  border: 1px solid black;
-  background-color: gray;
-  color: yellow;
-  transition: 0.5s;
-}
-
-.kotak button:hover {
-  background-color: green;
-}
-
-.kotak img {
-  width: 100%;
-  height: 30rem;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 20px;
-}
-
-@media (max-width: 800px) {
-  .kotak img {
-    width: 100%;
-    height: 10rem;
-  }
-}
-
-.content {
-  font-size: 1.5rem;
-}
-
-/* EACH FOOD RECIPE PAGE */
-.content-list {
-  margin-left: 20px;
-}
-
-footer {
-  background-color: #27ae60;
-  color: white;
-  padding: 20px;
-  text-align: center;
 }

@@ -1,0 +1,28 @@
+/* About page specific styles */
+
+.judul1 {
+  text-align: left;
+  margin: 2rem;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: #fffbe7;
+  border-radius: 16px;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+}
+
+.about-content h2 {
+  color: #27ae60;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-content p {
+  color: #222;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
