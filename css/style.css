@@ -150,7 +150,7 @@ body {
 main {
   display: block;
   width: 100vw;
-  margin-top: 10em;
+  margin-top: 8.5em;
   /* Add spacing below header */
   min-height: calc(100vh - 6.9em - 5rem);
   /* Ensure main fills viewport minus header and footer */
@@ -309,7 +309,7 @@ main {
 #rekomendasi-tempat {
   font-size: 2rem;
   text-align: center;
-  padding: 1rem 0;
+  padding: 2rem 0;
 }
 
 .places-container {
