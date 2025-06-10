@@ -1,5 +1,9 @@
 /* About page specific styles */
 
+.content {
+  margin: 10px;
+}
+
 .judul1 {
   text-align: left;
   margin: 2rem;
@@ -25,4 +29,31 @@
   font-size: 1.1rem;
   line-height: 1.7;
   margin-bottom: 1.2rem;
+  margin-left: 2wrem;
+}
+.text-with-image{
+  overflow: hidden;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.floated-img1 {
+  float: right;
+  width: 25rem;
+  margin-top: 5px;
+  margin-left: 15px;
+  border-radius: 12px;
+
+  /* Animasi masuk saat halaman dibuka */
+  animation: slideInRight 15s ease-out forwards;
+  opacity: 0; /* supaya gambar tidak tampil sebelum animasi */
 }
