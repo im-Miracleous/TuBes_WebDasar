@@ -3,7 +3,6 @@
 * {
   margin: 0;
   padding: 0;
-  list-style: none;
   text-decoration: none;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
@@ -75,6 +74,7 @@ body {
   display: inline-flex;
   gap: 10px;
   white-space: nowrap;
+  list-style: none;
 }
 
 .navigation-bar ul li {
