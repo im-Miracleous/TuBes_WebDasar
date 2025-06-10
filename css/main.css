@@ -205,14 +205,18 @@ main {
   padding: 20px;
 }
 
-.judul,
+.judul, .subjudul {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
 .isi {
   margin: 2rem;
   text-align: justify;
 }
 
-.judul {
-  text-align: center;
+.isi:last-child {
+  margin-bottom: 0;
 }
 
 .floated-img {
@@ -220,6 +224,117 @@ main {
   width: 20rem;
   margin: 1rem 2rem auto;
   border-radius: 12px;
+}
+
+.white-bg {
+    background-color: white;
+}
+
+#gallery {
+    margin-top: 1.5rem;
+}
+
+#news .judul, #news .subjudul {
+  margin-bottom: 0;
+}
+
+/* News card styling */
+.news-card {
+  display: flex;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  overflow: hidden;
+  margin: 2rem auto;
+  max-width: 950px;
+  width: 100%;
+}
+
+.news-image {
+  flex: 1.2;
+  min-width: 0;
+  display: flex;
+  align-items: stretch;
+}
+
+.news-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.news-content {
+  flex: 1.8;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.news-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.news-content p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.news-btn {
+  background: #ffd36b;
+  color: #222;
+  border: none;
+  border-radius: 12px;
+  padding: 1rem 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.2s;
+}
+
+.news-btn:hover {
+  background: #ffe29c;
+}
+
+.news-hyperlink {
+  display: block;
+  background: #ffd36b;
+  color: #222;
+  border: none;
+  text-align: center;
+  padding: 1.2rem 0;
+  border-radius: 12px;
+  margin: 1.5rem auto 0.8rem auto;
+  width: 100%;
+  max-width: 950px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s;
+  text-decoration: none;
+}
+
+.news-hyperlink:hover {
+  background: #ffe29c;
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .news-card {
+    flex-direction: column;
+  }
+  .news-image, .news-content {
+    flex: unset;
+    width: 100%;
+  }
+  .news-content {
+    padding: 1.2rem;
+  }
 }
 
 /* Carousel custom size */
