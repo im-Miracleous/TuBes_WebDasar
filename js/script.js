@@ -49,4 +49,27 @@ $(document).ready(function() {
             interval: 5000
         });
     }
+
+    // Expand/collapse .places-item text on ellipsis click
+    $('.places-item-text-wrapper').each(function() {
+        var $wrapper = $(this);
+        var $p = $wrapper.find('p');
+        // Only add if text is actually truncated
+        if ($p[0] && $p[0].scrollHeight > $p[0].clientHeight) {
+            var $btn = $('<span class="show-more" style="color:#27ae60;cursor:pointer;font-weight:600;">... Show more</span>');
+            $p.after($btn);
+            $btn.on('click', function() {
+                $p.css({
+                    'display': 'block',
+                    '-webkit-line-clamp': 'unset',
+                    'line-clamp': 'unset',
+                    'overflow': 'visible',
+                    'text-overflow': 'unset',
+                    'white-space': 'normal',
+                    'max-height': 'none'
+                });
+                $btn.remove();
+            });
+        }
+    });
 });
