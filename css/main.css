@@ -52,6 +52,17 @@ body {
   z-index: -1;
 }
 
+#header-logo-img {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+
+#logo-img {
+  width: 100px;
+  height: 100px;
+}
+
 .logo {
   text-decoration: none !important;
   font-size: 2rem;
@@ -354,6 +365,41 @@ footer {
   color: white;
   padding: 20px;
   text-align: center;
+}
+
+.footer-container {
+  max-height: 25rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+}
+
+#footer-infoKuliner {
+  width: 20rem;
+}
+
+.footerLink a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.2s;
+}
+
+.footerLink a:hover {
+  color: burlywood;
+}
+
+button#formSubmit {
+  background-color: burlywood;
+  color: #000;
+  padding: 5px 25px;
+  border: 0;
+  border-radius: 20px;
+  transition: 0.2s;
+}
+
+button#formSubmit:hover {
+  background-color: rgb(185, 154, 113);
 }
 
 @keyframes appear {
