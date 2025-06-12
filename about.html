@@ -104,17 +104,50 @@
             </p><br>
             </div>
 
-            <div class="konten">
-            <h1 class="judul1">Siapa Kami?</h1>
-            <p class="isi-about">
-                <div class="text-with-image">
-                <img src="./assets/img/About2.PNG" alt="Kulineran Bandung" class="floated-img2">
-                <img src="./assets/img/About2.PNG" alt="Kulineran Bandung" class="floated-img2">
-                <img src="./assets/img/About2.PNG" alt="Kulineran Bandung" class="floated-img2">
+          <section class="developer">
+            <h2>This Is Us!</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./assets/img/Ferdi.PNG">
+                    <h3>Ferdi Gunawan</h3>
+                    <p>NRP  : 2472028</p>
+                    <p>Email: 2472028@maranatha.ac.id</p>
                 </div>
-            </p>
+                <div class="card">
+                    <img src="./assets/img/Mire1.PNG">
+                    <h3>Miracle</h3>
+                    <p>NRP  : 2472019</p>
+                    <p>Email: 2472019@maranatha.ac.id</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/Sapira.PNG">
+                    <h3>Sapira</h3>
+                    <p>NRP  : 2472047</p>
+                    <p>Email: 2472047@maranatha.ac.id</p>
+                </div>
+            </div>
+
+          </section>
             </div>
         </section>
      </main>
+
+     <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        }, {
+            threshold: 0.5 // Adjust for sensitivity
+        });
+    
+        const cards = document.querySelectorAll('.card');
+        cards.forEach(card => {
+            observer.observe(card);
+        });
+    </script>
 </body>
+    
 </html>

@@ -53,7 +53,49 @@
   margin-left: 15px;
   border-radius: 12px;
 
-  /* Animasi masuk saat halaman dibuka */
-  animation: slideInRight 15s ease-out forwards;
-  opacity: 0; /* supaya gambar tidak tampil sebelum animasi */
+  animation: slideInRight 10s ease-out forwards;
+  opacity: 0; 
+}
+
+.developer {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap:30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: #27ae60;
+  border-radius: 15px;
+  padding: 20px;
+  width:300px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.07);
+  text-align: center;
+
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 2s ease-in-out;
+}
+
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
 }
