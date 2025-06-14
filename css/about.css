@@ -31,7 +31,7 @@
   margin-bottom: 1.2rem;
   margin-left: 2wrem;
 }
-.text-with-image{
+.text-with-image {
   overflow: hidden;
 }
 
@@ -54,7 +54,7 @@
   border-radius: 12px;
 
   animation: slideInRight 10s ease-out forwards;
-  opacity: 0; 
+  opacity: 0;
 }
 
 .developer {
@@ -65,7 +65,7 @@
 .card-container {
   display: flex;
   justify-content: center;
-  gap:30px;
+  gap: 30px;
   flex-wrap: wrap;
   margin-top: 30px;
 }
@@ -74,7 +74,7 @@
   background-color: #27ae60;
   border-radius: 15px;
   padding: 20px;
-  width:300px;
+  width: 300px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.07);
   text-align: center;
 
@@ -98,48 +98,4 @@
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 15px;
-}
-
-/* FOOTER */
-
-footer {
-  background-color: #27ae60;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-
-.footer-container {
-  max-height: 25rem;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 10px;
-}
-
-#footer-infoKuliner {
-  width: 20rem;
-}
-
-.footerLink a {
-  text-decoration: none;
-  color: #fff;
-  transition: 0.2s;
-}
-
-.footerLink a:hover {
-  color: burlywood;
-}
-
-button#formSubmit {
-  background-color: burlywood;
-  color: #000;
-  padding: 5px 25px;
-  border: 0;
-  border-radius: 20px;
-  transition: 0.2s;
-}
-
-button#formSubmit:hover {
-  background-color: rgb(185, 154, 113);
 }

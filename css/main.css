@@ -53,8 +53,7 @@ body {
 }
 
 #header-logo-img {
-  width: 100px;
-  height: 100px;
+  width: 75px;
   overflow: hidden;
 }
 
@@ -360,7 +359,194 @@ main {
   object-fit: cover;
 }
 
+/* FOOTER */
+
 footer {
+  background-color: #27ae60;
+  color: #fff;
+  padding: 40px 0;
+  text-align: left;
+}
+
+footer p {
+  margin: 0;
+}
+
+.footer-container {
+  height: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.footer-item {
+  flex: 1;
+  min-width: 250px;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-title {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+#footer-infoKuliner {
+  text-align: center;
+}
+
+#footer-infoKuliner img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+#footer-infoKuliner h2 {
+  margin: 10px 0 15px 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+#footer-infoKuliner p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0.5rem auto 0;
+}
+
+#footer-linkGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footerLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footerLink h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.footerLink ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerLink ul li {
+  margin-bottom: 10px;
+}
+
+.footerLink a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+
+.footerLink a:hover {
+  color: burlywood;
+}
+
+#footer-form form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#footer-form h5 {
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.input-set {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.input-set .form-label {
+  min-width: 100px;
+  text-align: right;
+}
+
+.input-set input,
+.input-set textarea {
+  flex: 1;
+  border-radius: 8px;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  font-size: 1rem;
+  margin: 0;
+  max-width: 320px;
+  width: 100%;
+}
+
+.input-set textarea {
+  min-height: 40px;
+  resize: vertical;
+}
+
+button#formSubmit {
+  background-color: burlywood;
+  color: #000;
+  padding: 10px 35px;
+  border: 0;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 auto;
+  display: block;
+  transition: 0.2s;
+}
+
+button#formSubmit:hover {
+  background-color: rgb(185, 154, 113);
+}
+
+@media (max-width: 1100px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  #footer-infoKuliner,
+  .footerLink,
+  #footer-form {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+  }
+  .footerLink ul {
+    display: inline-block;
+    text-align: left;
+  }
+  #footer-form {
+    text-align: left;
+  }
+}
+
+/* footer {
   background-color: #27ae60;
   color: white;
   padding: 20px;
@@ -387,7 +573,7 @@ footer {
 
 .footerLink a:hover {
   color: burlywood;
-}
+} */
 
 button#formSubmit {
   background-color: burlywood;
