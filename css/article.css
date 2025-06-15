@@ -16,7 +16,7 @@ header {
 }
 
 main {
-  padding: 1rem 2rem;
+  padding: 1rem 3rem;
   margin-top: 150px; /* Adjust based on header height */
   box-sizing: border-box;
 }
@@ -36,14 +36,44 @@ main {
     padding: 2rem;
 }
 
-.info-card {
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.grid-item {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.info-card.special {
   width: 50rem;
+}
+
+.info-card {
   background: #fff;
   border-radius: 18px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
   overflow: hidden;
-  margin: 2rem 0;
   padding: 0 0 1.5rem 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .info-card-image {
