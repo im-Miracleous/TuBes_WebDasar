@@ -6,8 +6,109 @@
     <title>Article</title>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/article.css">
+    <script defer src="./js/script.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <!-- Body content goes here -->
+    
+    <!-- HEADER SECTION -->
+    <header class="header">
+        <img id="header-logo-img" src="./assets/img/logo.png" alt="Oemah Soenda logo">
+        <a href="#" class="logo">Oemah Soenda</a>
+
+        <label for="" class="icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
+
+        <nav class="navigation-bar">
+            <ul>
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./recipes.html" class="active">Recipes</a>
+                </li>
+                <li>
+                    <a href="./where-to-eat.html">Where to Eat</a>
+                </li>
+                <li class="has-dropdown">
+                    <a href="./article.html">Articles <i class='bx bx-chevron-down' id="dropdown-icon"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Article 1</a></li>
+                        <li><a href="#">Article 2</a></li>
+                        <li><a href="#">Article 3</a></li>
+                        <li><a href="#">Article 4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN SECTION -->
+    <main>
+        <h1 id="bulletin-page-title">Breaking News!</h1>
+        <hr class="news-line">
+
+        <div class="card-container">
+            <div class="info-card">
+                <img class="info-card-image" src="IMAGE_URL" alt="Deskripsi gambar">
+                <div class="info-card-highlight"></div>
+                <div class="info-card-title">Judul Berita</div>
+                <div class="info-card-source">Sumber: detik.com</div>
+                <div class="info-card-desc">
+                    Deskripsi singkat berita di sini. Bisa 1-2 kalimat.
+                </div>
+                <a class="info-card-btn" href="#">Selengkapnya</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <div class="footer-container">
+            <div id="footer-infoKuliner" class="footer-item">
+                <img id="logo-img" src="./assets/img/logo.png" width="40">
+                <h5 class="footer-title">Oemah Soenda</h5>
+                <p class="teks-footer">
+                    Situs web kuliner yang didedikasikan untuk memperkenalkan kekayaan kuliner Sunda (Oemah Soenda) kepada dunia.
+                </p>
+            </div>
+            <div id="footer-linkGroup" class="footer-item">
+                <h5 class="footer-title">Links</h5>
+                    <div class="footerLink">
+                        <p><a href="./index.html">Home</a></p>
+                        <p><a href="./recipes.html">Daftar Makanan</a></p>
+                        <p><a href="./where-to-eat.html">Rekomendasi Tempat</a></p>
+                        <p><a href="./article.html">Article</a></p>
+                        <p><a href="./about.html">About</a></p>
+                    </div>
+            </div>
+            <div id="footer-form" class="footer-item">
+                <form>
+                    <h5 class="footer-title">Kritik dan Saran</h5>
+                    <div class="input-set">
+                        <span class="form-label">Nama</span>
+                        <input type="text" class="nama" placeholder="Nama Lengkap" aria-label="Nama Lengkap" required>
+                    </div>
+                
+                    <div class="input-set">
+                        <span class="form-label">Email</span>
+                        <input type="email" class="email" placeholder="Email" aria-label="Email" required>
+                    </div>
+                
+                    <div class="input-set">
+                        <span class="form-label">Kritik/Saran</span>
+                        <textarea class="critics"></textarea>
+                    </div>
+                    <button id="formSubmit" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>

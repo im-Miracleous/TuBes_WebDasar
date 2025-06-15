@@ -1,1 +1,125 @@
+body {
+  background-color: #fff !important;
+}
 
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+#bulletin-page-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+main {
+  padding: 1rem 2rem;
+  margin-top: 150px; /* Adjust based on header height */
+  box-sizing: border-box;
+}
+
+@media (max-width: 920px) {
+  main {
+    margin-top: 120px; /* Adjust for smaller screens */
+  }
+}
+
+/* Info Card Design for Article Page */
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.info-card {
+  width: 50rem;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  margin: 2rem 0;
+  padding: 0 0 1.5rem 0;
+}
+
+.info-card-image {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+
+.info-card-highlight {
+  background: #ffd600;
+  height: 6px;
+  width: 100%;
+  margin-bottom: 1.2rem;
+}
+.info-card-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 1.5rem 0.5rem 1.5rem;
+}
+.info-card-source {
+  color: #888;
+  font-size: 1rem;
+  margin: 0 1.5rem 0.5rem 1.5rem;
+}
+.info-card-desc {
+  font-size: 1.1rem;
+  margin: 0 1.5rem 1.5rem 1.5rem;
+}
+.info-card-btn {
+  display: block;
+  width: calc(100% - 3rem);
+  margin: 0 1.5rem;
+  background: #ffd600;
+  color: #111;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.info-card-btn:hover {
+  background: #ffe066;
+}
+@media (max-width: 920px) {
+  .info-card {
+    width: 40rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+  }
+  .info-card-image {
+    height: 160px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .info-card-title,
+  .info-card-source,
+  .info-card-desc {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .info-card-btn {
+    width: calc(100% - 2rem);
+    margin: 0 1rem;
+    padding: 0.8rem 0;
+    font-size: 1rem;
+  }
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
