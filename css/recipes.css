@@ -1,5 +1,9 @@
 /* RECIPE PAGES */
 
+main {
+  margin-bottom: 0;
+}
+
 #daftar-makanan {
   font-size: 2rem;
   text-align: center;
