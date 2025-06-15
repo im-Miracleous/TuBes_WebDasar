@@ -68,10 +68,11 @@
   gap: 30px;
   flex-wrap: wrap;
   margin-top: 30px;
+  color: #fff5ee;
 }
 
 .card {
-  background-color: #27ae60;
+  background-color: #9d6330;
   border-radius: 15px;
   padding: 20px;
   width: 300px;

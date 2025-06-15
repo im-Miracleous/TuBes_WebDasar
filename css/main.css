@@ -14,11 +14,11 @@ html {
 }
 
 body {
-  background-color: greenyellow !important;
+  background-color: #f5f0e8 !important;
 }
 
 .header {
-  background-color: #27ae60;
+  background-color: #4a3f35;
   position: fixed;
   top: 0;
   left: 0;
@@ -167,7 +167,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("../assets/img/background.jpg") no-repeat;
+  background: url("../assets/img/background.png") no-repeat;
   background-size: cover;
   background-position: center top;
 }
@@ -191,7 +191,7 @@ main {
   color: white;
   font-size: 1rem;
   font-weight: 500;
-  border: 3px solid greenyellow;
+  border: 3px solid #f5f0e8;
   margin-top: 20px;
   padding: 10px 25px;
   border-radius: 50px;
@@ -199,14 +199,14 @@ main {
 }
 
 .banner-button button:hover {
-  background: greenyellow;
-  border: 3px solid greenyellow;
+  background: #f5f0e8;
+  border: 3px solid #f5f0e8;
   color: black;
   cursor: pointer;
 }
 
 .content {
-  background-color: greenyellow;
+  background-color: #f5f0e8;
   margin: 0;
   padding: 20px;
 }
@@ -362,7 +362,7 @@ main {
 /* FOOTER */
 
 footer {
-  background-color: #27ae60;
+  background-color: #4a3f35;
   color: #fff;
   padding: 40px 0;
   text-align: left;
@@ -547,7 +547,7 @@ button#formSubmit:hover {
 }
 
 /* footer {
-  background-color: #27ae60;
+  background-color: #4a3f35;
   color: white;
   padding: 20px;
   text-align: center;
@@ -585,7 +585,7 @@ button#formSubmit {
 }
 
 button#formSubmit:hover {
-  background-color: rgb(185, 154, 113);
+  background-color: #b99a71;
 }
 
 @keyframes appear {
@@ -601,7 +601,7 @@ button#formSubmit:hover {
 }
 
 #news {
-  background-color: greenyellow !important;
+  background-color: #f5f0e8 !important;
 }
 
 /* Responsive */
