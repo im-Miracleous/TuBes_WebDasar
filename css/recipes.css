@@ -70,21 +70,6 @@
   .content {
     font-size: 1.5rem;
   }
-
-  /* RECIPE PAGES */
-  footer {
-    background-color: #27ae60;
-    color: white;
-    padding: 20px;
-    text-align: center;
-  }
-
-  /* PLACES PAGE */
-  .places-container {
-    display: flex;
-    flex-direction: column;
-    width: 70vw;
-  }
 }
 
 /* EACH FOOD RECIPE PAGE */

@@ -697,9 +697,13 @@ button#formSubmit:hover {
   .news-hyperlink {
     max-width: 80%;
   }
-}
 
-@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
   .carousel-control-prev {
     left: 10vw;
   }
