@@ -91,11 +91,11 @@
         </section>
      </main>
 
-     <!-- FOOTER SECTION -->
+    <!-- FOOTER SECTION -->
     <footer>
         <div class="footer-container">
             <div id="footer-infoKuliner" class="footer-item">
-                <img id="logo-img" src="../assets/img/logo.png" width="40">
+                <img id="logo-img" src="./assets/img/logo.png" width="40">
                 <h5 class="footer-title">Oemah Soenda</h5>
                 <p class="teks-footer">
                     Situs web kuliner yang didedikasikan untuk memperkenalkan kekayaan kuliner Sunda (Oemah Soenda) kepada dunia.
@@ -112,27 +112,29 @@
                     </div>
             </div>
             <div id="footer-form" class="footer-item">
-                <form>
+                <form method="post" name="git-form">
                     <h5 class="footer-title">Get In Touch!</h5>
                     <div class="input-set">
                         <span class="form-label">Nama</span>
-                        <input type="text" class="nama" placeholder="Nama Lengkap" aria-label="Nama Lengkap" required>
+                        <input type="text" name="your-name" placeholder="Nama Lengkap" aria-label="Nama Lengkap" required>
                     </div>
                 
                     <div class="input-set">
                         <span class="form-label">Email</span>
-                        <input type="email" class="email" placeholder="Email" aria-label="Email" required>
+                        <input type="email" name="your-email" placeholder="Email" aria-label="Email" required>
                     </div>
                 
                     <div class="input-set">
-                        <span class="form-label">Kritik/Saran</span>
-                        <textarea class="critics"></textarea>
+                        <span class="form-label">Pesan</span>
+                        <textarea name="message" rows="3" placeholder="Tulis pesan Anda di sini..."></textarea>
                     </div>
                     <button id="formSubmit" type="submit">Submit</button>
                 </form>
             </div>
         </div>
     </footer>
+
+    <script src="../js/GIT-Form.js"></script>
 </body>
 
 </html>
