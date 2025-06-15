@@ -292,6 +292,7 @@ main {
 }
 
 .news-content p {
+  text-align: justify;
   font-size: 1.1rem;
   margin-bottom: 2rem;
 }
@@ -709,5 +710,61 @@ button#formSubmit:hover {
   }
   .carousel-control-next {
     right: 10vw;
+  }
+}
+
+@media (max-width: 640px) {
+  .logo {
+    display: none;
+  }
+
+  main {
+    margin: 5.8em 0;
+  }
+
+  .floated-img {
+    width: 100%;
+    margin: 1rem auto;
+    float: none;
+  }
+
+  footer {
+    padding: 2rem;
+  }
+
+  .footer-container {
+    gap: 50px;
+  }
+
+  .footerLink {
+    gap: 0.5rem;
+  }
+
+  .footer-title {
+    font-size: 1rem;
+  }
+
+  #footer-infoKuliner p,
+  .footerLink a, span.form-label,
+  .input-set input, .input-set textarea {
+    font-size: 0.8rem;
+  }
+
+  .carousel-control-prev {
+    left: 5vw;
+  }
+  .carousel-control-next {
+    right: 5vw;
+  }
+
+  .navigation-bar ul li a {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .icons {
+    position: static;
   }
 }

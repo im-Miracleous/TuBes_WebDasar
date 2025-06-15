@@ -76,6 +76,30 @@ main {
   }
 }
 
+@media (max-width: 640px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .kotak {
+    width: 100%;
+    max-width: 400px;
+    height: fit-content;
+  }
+}
+
 /* EACH FOOD RECIPE PAGE */
 .content-list {
   margin-left: 20px;
