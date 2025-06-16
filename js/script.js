@@ -48,4 +48,17 @@ $(document).ready(function() {
             interval: 5000
         });
     }
+
+    // Fade-in on scroll
+    document.querySelectorAll('body *').forEach(el => el.classList.add('fade-in'));
+    const fadeEls = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+    fadeEls.forEach(el => observer.observe(el));
 });
