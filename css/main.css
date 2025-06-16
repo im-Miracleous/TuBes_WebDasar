@@ -62,6 +62,18 @@ body {
   height: 100px;
 }
 
+.logo-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logo-group:hover {
+  transform: scale(1.05);
+}
+
 .logo {
   text-decoration: none !important;
   font-size: 2rem;
@@ -148,6 +160,7 @@ body {
 
 .icons {
   position: absolute;
+  top: 30%;
   right: 5%;
   font-size: 2.8rem;
   color: #fff;
@@ -714,8 +727,14 @@ button#formSubmit:hover {
 }
 
 @media (max-width: 640px) {
-  .logo {
+  #header-logo-img {
     display: none;
+  }
+
+  .logo-group {
+    justify-content: flex-start;
+    text-align: left;
+    margin-left: 0;
   }
 
   main {
@@ -766,5 +785,17 @@ button#formSubmit:hover {
 @media (max-width: 480px) {
   .icons {
     position: static;
+  }
+
+  .header-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
   }
 }
