@@ -153,7 +153,7 @@ dialog#places-dialog::backdrop {
 dialog#places-dialog img {
   max-width: 100%;
   max-height: 220px;
-  margin-bottom: 1rem;
+  margin: 0.5rem;
   border-radius: 12px;
   object-fit: cover;
 }
@@ -161,7 +161,7 @@ dialog#places-dialog img {
 dialog#places-dialog p {
   max-height: 200px;
   overflow-y: auto;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 #open-map,
@@ -235,6 +235,10 @@ dialog#places-dialog.dialog-hide {
   .places-item-img-wrapper {
     max-width: 100%;
     height: 100px;
+  }
+
+  .places-item h2 {
+    font-size: 1rem;
   }
 
   .places-item img {
@@ -311,7 +315,12 @@ dialog#places-dialog.dialog-hide {
   }
   dialog#places-dialog {
     padding: 1rem 0.5rem;
-    max-width: 98vw;
+    max-width: 80vw;
+  }
+  dialog#places-dialog #dialog-img {
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 30px;
   }
   #open-map,
   #dialog-close {
