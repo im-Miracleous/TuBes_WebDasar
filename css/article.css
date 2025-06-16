@@ -18,6 +18,7 @@ header {
 main {
   padding: 1rem 3rem;
   margin-top: 150px; /* Adjust based on header height */
+  margin-bottom: 0;
   box-sizing: border-box;
 }
 
