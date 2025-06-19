@@ -49,16 +49,21 @@ $(document).ready(function() {
         });
     }
 
-    // Fade-in on scroll
-    document.querySelectorAll('body *').forEach(el => el.classList.add('fade-in'));
-    const fadeEls = document.querySelectorAll('.fade-in');
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if(entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target);
-            }
-        });
+    // Animations on-scroll
+    // Select all elements with the 'pop-up' class
+    const popUps = document.querySelectorAll('.pop-up');
+
+    // Create an Intersection Observer
+    const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        // Optionally, unobserve after animation
+        observer.unobserve(entry.target);
+        }
+    });
     }, { threshold: 0.1 });
-    fadeEls.forEach(el => observer.observe(el));
+
+    // Observe each pop-up element
+    popUps.forEach(el => observer.observe(el));
 });
