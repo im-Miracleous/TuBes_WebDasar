@@ -48,4 +48,22 @@ $(document).ready(function() {
             interval: 5000
         });
     }
+
+    // Animations on-scroll
+    // Select all elements with the 'pop-up' class
+    const popUps = document.querySelectorAll('.pop-up');
+
+    // Create an Intersection Observer
+    const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        // Optionally, unobserve after animation
+        observer.unobserve(entry.target);
+        }
+    });
+    }, { threshold: 0.1 });
+
+    // Observe each pop-up element
+    popUps.forEach(el => observer.observe(el));
 });

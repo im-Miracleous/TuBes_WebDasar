@@ -1,21 +1,35 @@
 /* About page specific styles */
 
-.content {
-  margin: 10px;
+html {
+  width: 100vw;
 }
 
-.judul1 {
-  text-align: left;
-  margin: 2rem;
+.content {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
 }
 
 .about-content {
-  max-width: 800px;
+  max-width: 90%;
   margin: 2rem auto;
   background: #fffbe7;
   border-radius: 16px;
   padding: 2rem 2.5rem;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.about-content img.floated-img1 {
+  width: 100%;
+  max-height: 300px;
+  border-radius: 12px;
+  object-fit: cover;
+  object-position: center;;
 }
 
 .about-content h2 {
@@ -24,15 +38,15 @@
   margin-bottom: 1rem;
 }
 
-.about-content p {
+.about-content p, .about-content ol {
+  text-align: justify;
   color: #222;
   font-size: 1.1rem;
   line-height: 1.7;
-  margin-bottom: 1.2rem;
-  margin-left: 2wrem;
 }
-.text-with-image {
-  overflow: hidden;
+
+.about-content ol {
+  margin-left: 20px;
 }
 
 @keyframes slideInRight {
@@ -44,17 +58,6 @@
     transform: translateX(0);
     opacity: 1;
   }
-}
-
-.floated-img1 {
-  float: right;
-  width: 25rem;
-  margin-top: 5px;
-  margin-left: 15px;
-  border-radius: 12px;
-
-  animation: slideInRight 10s ease-out forwards;
-  opacity: 0;
 }
 
 .developer {
@@ -88,6 +91,7 @@
   opacity: 1;
   transform: translateY(0);
 }
+
 .card:hover {
   transform: scale(1.1);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
@@ -99,4 +103,19 @@
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 15px;
+}
+
+@media (max-width: 700px) {
+  .about-content {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1.5rem;
+    gap: 12px;
+  }
+
+  .about-content img.floated-img1 {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 12px 0;
+  }
 }
