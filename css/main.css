@@ -177,9 +177,6 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("../assets/img/background.png") no-repeat;
-  background-size: cover;
-  background-position: center top;
 }
 
 .banner-label {

@@ -17,18 +17,18 @@ header {
 
 main {
   padding: 1rem 3rem;
-  margin-top: 150px; /* Adjust based on header height */
+  margin-top: 140px;
   margin-bottom: 0;
   box-sizing: border-box;
 }
 
 @media (max-width: 920px) {
   main {
-    margin-top: 120px; /* Adjust for smaller screens */
+    margin-top: 98px;
   }
 }
 
-/* Info Card Design for Article Page */
+/* Card Design */
 .card-container {
     display: flex;
     flex-direction: column;
