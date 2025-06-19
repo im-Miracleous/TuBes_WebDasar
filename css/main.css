@@ -305,7 +305,7 @@ main {
 }
 
 .news-btn {
-  background: #ffd36b;
+  background: #FCEF91;
   color: #222;
   border: none;
   border-radius: 12px;
@@ -318,12 +318,12 @@ main {
 }
 
 .news-btn:hover {
-  background: #ffe29c;
+  background: #ffc745;
 }
 
 .news-hyperlink {
   display: block;
-  background: #ffd36b;
+  background-color: #FCEF91;
   color: #222;
   border: none;
   text-align: center;
@@ -335,13 +335,13 @@ main {
   font-size: 1.1rem;
   font-weight: 500;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  transition: background 0.2s;
   text-decoration: none;
 }
 
 .news-hyperlink:hover {
-  background: #ffe29c;
+  background-color: #ffc745;
   text-decoration: none;
+  transition: background 0.2s;
 }
 
 /* Carousel custom size */

@@ -87,26 +87,26 @@ main {
 }
 
 .info-card-highlight.special {
-  background: #ff9800;
+  background: #FCEF91;
   height: 8px;
 }
 
 .info-card-highlight {
-  background: #ffd600;
+  background: #FCEF91;
   height: 6px;
   width: 100%;
   margin-bottom: 1.2rem;
 }
 
 .info-card-source a {
-  color: #ff9800;
+  color: #ffbc20;
   text-decoration: none;
   font-weight: 600;
 }
 
 .info-card-source a:hover {
   text-decoration: underline;
-  color: #e68900;
+  color: #e5aa20;
 }
 
 .info-card-title {
@@ -139,7 +139,7 @@ main {
   display: block;
   width: calc(100% - 3rem);
   margin: 0 1.5rem;
-  background: #ffd600;
+  background: #FCEF91;
   color: #111;
   border: none;
   border-radius: 10px;
@@ -151,7 +151,7 @@ main {
   transition: background 0.2s;
 }
 .info-card-btn:hover {
-  background: #ffe066;
+  background: #ffc745;
 }
 @media (max-width: 920px) {
   .info-card.special {
