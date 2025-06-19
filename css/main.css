@@ -642,6 +642,16 @@ button#formSubmit:hover {
 
 /* BREAKPOINTS */
 
+@media (max-width: 1100px) {
+  #header-logo-img {
+    display: none;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+}
+
 @media (max-width: 920px) {
   .icons {
     display: inline-flex;
