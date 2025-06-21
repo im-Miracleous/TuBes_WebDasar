@@ -1,180 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oemah Soenda - Your best guide to Bandung and Sunda's popular cuisines!</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Oemah Soenda - Your best guide to Bandung and Sunda's popular cuisines!
+    </title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/where-to-eat.css">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/where-to-eat.css" />
     <script defer src="./js/script.js"></script>
-</head>
-<body>
-        
+  </head>
+  <body>
     <!-- HEADER SECTION -->
     <header class="header">
-        <div class="header-group">
-            <div class="logo-group" onclick="location.href='./index.html'">
-                <img id="header-logo-img" src="./assets/img/logo.png" alt="Oemah Soenda logo">
-                <a href="#" class="logo">Oemah Soenda</a>
-            </div>
-            <label for="" class="icons">
-                <i class='bx bx-menu' id="menu-icon"></i>
-                <i class='bx bx-x' id="close-icon"></i>
-            </label>
+      <div class="header-group">
+        <div class="logo-group" onclick="location.href='./index.html'">
+          <img
+            id="header-logo-img"
+            src="./assets/img/logo.png"
+            alt="Oemah Soenda logo"
+          />
+          <a href="#" class="logo">Oemah Soenda</a>
         </div>
+        <label for="" class="icons">
+          <i class="bx bx-menu" id="menu-icon"></i>
+          <i class="bx bx-x" id="close-icon"></i>
+        </label>
+      </div>
 
-        <nav class="navigation-bar">
-            <ul>
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./recipes.html" class="active">Recipes</a>
-                </li>
-                <li>
-                    <a href="./where-to-eat.html">Where to Eat</a>
-                </li>
-                <li>
-                    <a href="./article.html">Articles</a>
-                </li>
-                <li>
-                    <a href="./about.html">About</a>
-                </li>
-            </ul>
-        </nav>
+      <nav class="navigation-bar">
+        <ul>
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="./recipes.html" class="active">Recipes</a>
+          </li>
+          <li>
+            <a href="./where-to-eat.html">Where to Eat</a>
+          </li>
+          <li>
+            <a href="./article.html">Articles</a>
+          </li>
+          <li>
+            <a href="./about.html">About</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <!-- MAIN SECTION -->
-     <main>
-        <h1 id="rekomendasi-tempat" class="pop-up">Rekomendasi Tempat</h1>
-        <div class="places-container">
-            <div class="places-item pop-up">
-                <h2>Sudirman Street</h2>
-                <p>Dengan tema kombinasi klasik ala chinatown dan modern melalui desain mural dan tata pencahayaan yang apik, suasana di Sudirman Street terutama pada malam hari merupakan tempat yang nyaman untuk hang-out ataupun berkumpul bersama teman, dan sangat representatif karena dikelola secara cukup profesional, dimana pengamen dan pedagang asongan dilarang memasuki kawasan ini. Sudirman Street memang memberikan kesan tersendiri bagi pengunjung kuliner kota Bandung dan juga kota-kota lain yang ingin mencari alternatif makanan baik halal maupun non-halal, didukung oleh suasana yang menyenangkan dengan penataan pernik-pernik lampu dan tempat makan yang bersih.</p>
-                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2d/d8/ba/fb/exquisite.jpg?w=900&h=500&s=1" alt="Sudirman Street">
-                <button data-map="https://maps.app.goo.gl/RYrV28C8avM2gvF6A">View More</button>
-                
-            </div>
-            <div class="places-item pop-up">
-                <h2>Dapoer Pandan Wangi</h2>
-                <p>Dapoer Pandan Wangi adalah sebuah restoran Sunda yang terletak di Bandung, Indonesia, yang terkenal dengan hidangan khas Sunda dan suasana yang nyaman. Restoran ini memiliki dua lokasi di Bandung, yaitu di Jl. Patuha 38 dan Jl. Terusan Pasirkoja 380. Restoran berkonsep Sunda ini mempunyai bangunan yang berbentuk rumah tradisional Jawa Barat seperti Julang Ngapak dan Capit Gunting. Saat masuk ke dalam restoran, pengunjung akan langsung disuguhkan oleh lagu Sunda dan gemericik air di kolam kan. Hal ini akan menambah suasana nyaman dan homey di restoran. </p>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtoOImERl1nEggz4Wfdxq-nurmWY7Cmvz6lw&s" alt="Dapoer Pandan Wangi">
-                <button data-map="https://maps.app.goo.gl/hYHCn42EqQ1qdULa8">View more</button>
-            </div>
-            <div class="places-item pop-up">
-                <h2>Sei Lelebo</h2>
-                <p>Se'i Lelebo adalah sebuah tempat makan terkenal di Bandung yang menyajikan berbagai menu olahan babi, terutama Se'i Babi (daging babi asap) dengan bumbu khas Indonesia seperti Woku,. Nama "Lelebo" juga merujuk pada nama pemilik/pemilik usaha tersebut. Se'i Lelebo memiliki beberapa lokasi cabang, termasuk di Punclut Raya dan Ciumbuleuit,. Mereka juga dikenal dengan menu seperti Suikiaw (pangsit rebus dengan olahan babi ala Lelebo) dan berbagai jenis babi seperti Gohyong Babi Udang Se'i Lelebo.</p>
-                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/34/56/1f/getlstd-property-photo.jpg?w=900&h=500&s=1" alt="Sei Lelebo">
-                <button data-map="https://maps.app.goo.gl/7gHcpMGSB6dnvDVn6">View more</button>
-            </div>
-            <div class="places-item pop-up">
-                <h2>Warung Nasi Ampera</h2>
-                <p>Warung Nasi Ampera adalah sebuah rumah makan masakan Sunda yang terkenal dan sudah beroperasi sejak tahun 1960-an. Warung Nasi Ampera memiliki nama yang disingkat dari "Amanat Penderitaan Rakyat". Mereka dikenal dengan pelayanan yang cepat, harga terjangkau, dan berbagai menu khas Sunda seperti nasi liwet, nasi timbel, ayam bakar, dan lain-lain. Warung Nasi Ampera juga memiliki beberapa cabang di berbagai daerah, termasuk di Bandung (untuk maps dibawah, akan mengambil contoh cabang di Pasteur).</p>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmpYlzJn6ivPwv9PhrIlPUkYbQ2-g8LpPSqw&s" alt="Warung Nasi Ampera">
-                <button data-map="https://maps.app.goo.gl/Rsau2gpGCF16d4Zz9">View more</button>
-            </div>
+    <main>
+      <h1 id="rekomendasi-tempat" class="pop-up">Rekomendasi Tempat</h1>
+      <div class="places-container">
+        <div class="places-item pop-up">
+          <h2>Sudirman Street</h2>
+          <p>
+            Dengan tema kombinasi klasik ala chinatown dan modern melalui desain
+            mural dan tata pencahayaan yang apik, suasana di Sudirman Street
+            terutama pada malam hari merupakan tempat yang nyaman untuk hang-out
+            ataupun berkumpul bersama teman, dan sangat representatif karena
+            dikelola secara cukup profesional, dimana pengamen dan pedagang
+            asongan dilarang memasuki kawasan ini. Sudirman Street memang
+            memberikan kesan tersendiri bagi pengunjung kuliner kota Bandung dan
+            juga kota-kota lain yang ingin mencari alternatif makanan baik halal
+            maupun non-halal, didukung oleh suasana yang menyenangkan dengan
+            penataan pernik-pernik lampu dan tempat makan yang bersih.
+          </p>
+          <img
+            src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2d/d8/ba/fb/exquisite.jpg?w=900&h=500&s=1"
+            alt="Sudirman Street"
+          />
+          <button data-map="https://maps.app.goo.gl/RYrV28C8avM2gvF6A">
+            View More
+          </button>
         </div>
-     </main>
+        <div class="places-item pop-up">
+          <h2>Dapoer Pandan Wangi</h2>
+          <p>
+            Dapoer Pandan Wangi adalah sebuah restoran Sunda yang terletak di
+            Bandung, Indonesia, yang terkenal dengan hidangan khas Sunda dan
+            suasana yang nyaman. Restoran ini memiliki dua lokasi di Bandung,
+            yaitu di Jl. Patuha 38 dan Jl. Terusan Pasirkoja 380. Restoran
+            berkonsep Sunda ini mempunyai bangunan yang berbentuk rumah
+            tradisional Jawa Barat seperti Julang Ngapak dan Capit Gunting. Saat
+            masuk ke dalam restoran, pengunjung akan langsung disuguhkan oleh
+            lagu Sunda dan gemericik air di kolam kan. Hal ini akan menambah
+            suasana nyaman dan homey di restoran.
+          </p>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtoOImERl1nEggz4Wfdxq-nurmWY7Cmvz6lw&s"
+            alt="Dapoer Pandan Wangi"
+          />
+          <button data-map="https://maps.app.goo.gl/hYHCn42EqQ1qdULa8">
+            View more
+          </button>
+        </div>
+        <div class="places-item pop-up">
+          <h2>Sei Lelebo</h2>
+          <p>
+            Se'i Lelebo adalah sebuah tempat makan terkenal di Bandung yang
+            menyajikan berbagai menu olahan babi, terutama Se'i Babi (daging
+            babi asap) dengan bumbu khas Indonesia seperti Woku,. Nama "Lelebo"
+            juga merujuk pada nama pemilik/pemilik usaha tersebut. Se'i Lelebo
+            memiliki beberapa lokasi cabang, termasuk di Punclut Raya dan
+            Ciumbuleuit,. Mereka juga dikenal dengan menu seperti Suikiaw
+            (pangsit rebus dengan olahan babi ala Lelebo) dan berbagai jenis
+            babi seperti Gohyong Babi Udang Se'i Lelebo.
+          </p>
+          <img
+            src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/34/56/1f/getlstd-property-photo.jpg?w=900&h=500&s=1"
+            alt="Sei Lelebo"
+          />
+          <button data-map="https://maps.app.goo.gl/7gHcpMGSB6dnvDVn6">
+            View more
+          </button>
+        </div>
+        <div class="places-item pop-up">
+          <h2>Warung Nasi Ampera</h2>
+          <p>
+            Warung Nasi Ampera adalah sebuah rumah makan masakan Sunda yang
+            terkenal dan sudah beroperasi sejak tahun 1960-an. Warung Nasi
+            Ampera memiliki nama yang disingkat dari "Amanat Penderitaan
+            Rakyat". Mereka dikenal dengan pelayanan yang cepat, harga
+            terjangkau, dan berbagai menu khas Sunda seperti nasi liwet, nasi
+            timbel, ayam bakar, dan lain-lain. Warung Nasi Ampera juga memiliki
+            beberapa cabang di berbagai daerah, termasuk di Bandung (untuk maps
+            dibawah, akan mengambil contoh cabang di Pasteur).
+          </p>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmpYlzJn6ivPwv9PhrIlPUkYbQ2-g8LpPSqw&s"
+            alt="Warung Nasi Ampera"
+          />
+          <button data-map="https://maps.app.goo.gl/Rsau2gpGCF16d4Zz9">
+            View more
+          </button>
+        </div>
+      </div>
+    </main>
 
-    <dialog id="places-dialog" style="display:none;">
-        <h2 id="dialog-title"></h2>
-        <img id="dialog-img" src="" alt="" style="max-width:100%;margin-bottom:1rem;">
-        <p id="dialog-text"></p>
-        <button id="open-map">View on Maps</button>
-        <button id="dialog-close">Close</button>
+    <dialog id="places-dialog" style="display: none">
+      <h2 id="dialog-title"></h2>
+      <img
+        id="dialog-img"
+        src=""
+        alt=""
+        style="max-width: 100%; margin-bottom: 1rem"
+      />
+      <p id="dialog-text"></p>
+      <button id="open-map">View on Maps</button>
+      <button id="dialog-close">Close</button>
     </dialog>
 
     <!-- FOOTER SECTION -->
     <footer>
-        <div class="footer-container pop-up">
-            <div id="footer-infoKuliner" class="footer-item">
-                <img id="logo-img" src="./assets/img/logo.png" width="40">
-                <h5 class="footer-title">Oemah Soenda</h5>
-                <p class="teks-footer">
-                    Situs web kuliner yang didedikasikan untuk memperkenalkan kekayaan kuliner Sunda (Oemah Soenda) kepada dunia.
-                </p>
-            </div>
-            <div id="footer-linkGroup" class="footer-item">
-                <h5 class="footer-title">Links</h5>
-                    <div class="footerLink">
-                        <p><a href="./index.html">Home</a></p>
-                        <p><a href="./recipes.html">Daftar Makanan</a></p>
-                        <p><a href="./where-to-eat.html">Rekomendasi Tempat</a></p>
-                        <p><a href="./article.html">Article</a></p>
-                        <p><a href="./about.html">About</a></p>
-                    </div>
-            </div>
-            <div id="footer-form" class="footer-item">
-                <form method="post" name="git-form">
-                    <h5 class="footer-title">Get In Touch!</h5>
-                    <div class="input-set">
-                        <span class="form-label">Nama</span>
-                        <input type="text" name="your-name" placeholder="Nama Lengkap" aria-label="Nama Lengkap" required>
-                    </div>
-                
-                    <div class="input-set">
-                        <span class="form-label">Email</span>
-                        <input type="email" name="your-email" placeholder="Email" aria-label="Email" required>
-                    </div>
-                
-                    <div class="input-set">
-                        <span class="form-label">Pesan</span>
-                        <textarea name="message" rows="3" placeholder="Tulis pesan Anda di sini..."></textarea>
-                    </div>
-                    <button id="formSubmit" type="submit">Submit</button>
-                </form>
-            </div>
+      <div class="footer-container pop-up">
+        <div id="footer-infoKuliner" class="footer-item">
+          <img id="logo-img" src="./assets/img/logo.png" width="40" />
+          <h5 class="footer-title">Oemah Soenda</h5>
+          <p class="teks-footer">
+            Situs web kuliner yang didedikasikan untuk memperkenalkan kekayaan
+            kuliner Sunda (Oemah Soenda) kepada dunia.
+          </p>
         </div>
+        <div id="footer-linkGroup" class="footer-item">
+          <h5 class="footer-title">Links</h5>
+          <div class="footerLink">
+            <p><a href="./index.html">Home</a></p>
+            <p><a href="./recipes.html">Daftar Makanan</a></p>
+            <p><a href="./where-to-eat.html">Rekomendasi Tempat</a></p>
+            <p><a href="./article.html">Article</a></p>
+            <p><a href="./about.html">About</a></p>
+          </div>
+        </div>
+        <div id="footer-form" class="footer-item">
+          <form method="post" name="git-form">
+            <h5 class="footer-title">Get In Touch!</h5>
+            <div class="input-set">
+              <span class="form-label">Nama</span>
+              <input
+                type="text"
+                name="your-name"
+                placeholder="Nama Lengkap"
+                aria-label="Nama Lengkap"
+                required
+              />
+            </div>
+
+            <div class="input-set">
+              <span class="form-label">Email</span>
+              <input
+                type="email"
+                name="your-email"
+                placeholder="Email"
+                aria-label="Email"
+                required
+              />
+            </div>
+
+            <div class="input-set">
+              <span class="form-label">Pesan</span>
+              <textarea
+                name="message"
+                rows="3"
+                placeholder="Tulis pesan Anda di sini..."
+              ></textarea>
+            </div>
+            <button id="formSubmit" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
     </footer>
 
     <script src="./js/GIT-Form.js"></script>
 
     <script>
-        // Always close the dialog on page load to prevent it from being stuck open
-        document.addEventListener('DOMContentLoaded', function() {
-            var dlg = document.getElementById('places-dialog');
-            if (dlg && typeof dlg.close === 'function') dlg.close();
-            dlg.removeAttribute('open');
-            dlg.style.display = 'none';
-        });
-        $(function() {
-            $('.places-item button').on('click', function() {
-                var $item = $(this).closest('.places-item');
-                var title = $item.find('h2').text();
-                var text = $item.find('p').text();
-                var img = $item.find('img').attr('src');
-                var imgAlt = $item.find('img').attr('alt');
-                var mapUrl = $item.data('map') || $(this).data('map');
-                $('#open-map').off('click').on('click', function() {
-                    if (mapUrl) {
-                        // Open the map URL in a new tab
-                        window.open(mapUrl, '_blank');
-                    }
-                })
-
-                $('#dialog-title').text(title);
-                $('#dialog-text').text(text);
-                $('#dialog-img').attr('src', img).attr('alt', imgAlt);
-
-                var dlg = document.getElementById('places-dialog');
-                dlg.classList.remove('dialog-hide');
-                dlg.style.display = '';
-                dlg.showModal();
+      // Always close the dialog on page load to prevent it from being stuck open
+      document.addEventListener("DOMContentLoaded", function () {
+        var dlg = document.getElementById("places-dialog");
+        if (dlg && typeof dlg.close === "function") dlg.close();
+        dlg.removeAttribute("open");
+        dlg.style.display = "none";
+      });
+      $(function () {
+        $(".places-item button").on("click", function () {
+          var $item = $(this).closest(".places-item");
+          var title = $item.find("h2").text();
+          var text = $item.find("p").text();
+          var img = $item.find("img").attr("src");
+          var imgAlt = $item.find("img").attr("alt");
+          var mapUrl = $item.data("map") || $(this).data("map");
+          $("#open-map")
+            .off("click")
+            .on("click", function () {
+              if (mapUrl) {
+                // Open the map URL in a new tab
+                window.open(mapUrl, "_blank");
+              }
             });
 
-            $('#dialog-close').on('click', function() {
-                var dlg = document.getElementById('places-dialog');
-                dlg.classList.add('dialog-hide');
-                setTimeout(function() {
-                    dlg.close();
-                    dlg.style.display = 'none';
-                    dlg.classList.remove('dialog-hide');
-                }, 220);
-            });
+          $("#dialog-title").text(title);
+          $("#dialog-text").text(text);
+          $("#dialog-img").attr("src", img).attr("alt", imgAlt);
+
+          var dlg = document.getElementById("places-dialog");
+          dlg.classList.remove("dialog-hide");
+          dlg.style.display = "";
+          dlg.showModal();
         });
+
+        $("#dialog-close").on("click", function () {
+          var dlg = document.getElementById("places-dialog");
+          dlg.classList.add("dialog-hide");
+          setTimeout(function () {
+            dlg.close();
+            dlg.style.display = "none";
+            dlg.classList.remove("dialog-hide");
+          }, 220);
+        });
+      });
     </script>
-</body>
+  </body>
 </html>

@@ -1,126 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oemah Soenda - Your best guide to Bandung and Sunda's popular cuisines!</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Oemah Soenda - Your best guide to Bandung and Sunda's popular cuisines!
+    </title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/recipes.css">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/recipes.css" />
     <script defer src="./js/script.js"></script>
     <script src="./js/food-search.js"></script>
     <script src="./js/recipes-grid.js"></script>
     <style>
-        .banner {
-            background: url("./assets/img/bg-resep.png") no-repeat;
-            background-size: cover;
-            background-position: center top;
-        }
+      .banner {
+        background: url("./assets/img/bg-resep.png") no-repeat;
+        background-size: cover;
+        background-position: center top;
+      }
     </style>
-</head>
-<body>
-        
+  </head>
+  <body>
     <!-- HEADER SECTION -->
     <header class="header">
-        <div class="header-group">
-            <div class="logo-group" onclick="location.href='./index.html'">
-                <img id="header-logo-img" src="./assets/img/logo.png" alt="Oemah Soenda logo">
-                <a href="#" class="logo">Oemah Soenda</a>
-            </div>
-            <label for="" class="icons">
-                <i class='bx bx-menu' id="menu-icon"></i>
-                <i class='bx bx-x' id="close-icon"></i>
-            </label>
+      <div class="header-group">
+        <div class="logo-group" onclick="location.href='./index.html'">
+          <img
+            id="header-logo-img"
+            src="./assets/img/logo.png"
+            alt="Oemah Soenda logo"
+          />
+          <a href="#" class="logo">Oemah Soenda</a>
         </div>
+        <label for="" class="icons">
+          <i class="bx bx-menu" id="menu-icon"></i>
+          <i class="bx bx-x" id="close-icon"></i>
+        </label>
+      </div>
 
-        <nav class="navigation-bar">
-            <ul>
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./recipes.html" class="active">Recipes</a>
-                </li>
-                <li>
-                    <a href="./where-to-eat.html">Where to Eat</a>
-                </li>
-                <li>
-                    <a href="./article.html">Articles</a>
-                </li>
-                <li>
-                    <a href="./about.html">About</a>
-                </li>
-            </ul>
-        </nav>
+      <nav class="navigation-bar">
+        <ul>
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="./recipes.html" class="active">Recipes</a>
+          </li>
+          <li>
+            <a href="./where-to-eat.html">Where to Eat</a>
+          </li>
+          <li>
+            <a href="./article.html">Articles</a>
+          </li>
+          <li>
+            <a href="./about.html">About</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <!-- MAIN SECTION -->
-     <main>
-        <section class="banner">
-            <div class="banner-label pop-up">
-                <div class="banner-title">
-                    <p>Kumpulan Resep Masakan Khas Bandung</p>
-                </div>
-                <div class="banner-button">
-                    <a href="#daftar-makanan"><button>Show me!</button></a>
-                </div>
-            </div>
-        </section>
+    <main>
+      <section class="banner">
+        <div class="banner-label pop-up">
+          <div class="banner-title">
+            <p>Kumpulan Resep Masakan Khas Bandung</p>
+          </div>
+          <div class="banner-button">
+            <a href="#daftar-makanan"><button>Show me!</button></a>
+          </div>
+        </div>
+      </section>
 
-        <section class="content">
-            <h3 id="daftar-makanan" class="pop-up">Daftar Makanan</h3>
-            <input type="text" id="food-search" placeholder="Cari makanan...">
-            <div class="grid-container">
-                <!-- Isi grid-container akan diisi dari perintah JavaScript -->
-            </div>
-        </section>
-     </main>
+      <section class="content">
+        <h3 id="daftar-makanan" class="pop-up">Daftar Makanan</h3>
+        <input type="text" id="food-search" placeholder="Cari makanan..." />
+        <div class="grid-container">
+          <!-- Isi grid-container akan diisi dari perintah JavaScript -->
+        </div>
+      </section>
+    </main>
 
     <!-- FOOTER SECTION -->
     <footer>
-        <div class="footer-container pop-up">
-            <div id="footer-infoKuliner" class="footer-item">
-                <img id="logo-img" src="./assets/img/logo.png" width="40">
-                <h5 class="footer-title">Oemah Soenda</h5>
-                <p class="teks-footer">
-                    Situs web kuliner yang didedikasikan untuk memperkenalkan kekayaan kuliner Sunda (Oemah Soenda) kepada dunia.
-                </p>
-            </div>
-            <div id="footer-linkGroup" class="footer-item">
-                <h5 class="footer-title">Links</h5>
-                    <div class="footerLink">
-                        <p><a href="./index.html">Home</a></p>
-                        <p><a href="./recipes.html">Daftar Makanan</a></p>
-                        <p><a href="./where-to-eat.html">Rekomendasi Tempat</a></p>
-                        <p><a href="./article.html">Article</a></p>
-                        <p><a href="./about.html">About</a></p>
-                    </div>
-            </div>
-            <div id="footer-form" class="footer-item">
-                <form method="post" name="git-form">
-                    <h5 class="footer-title">Get In Touch!</h5>
-                    <div class="input-set">
-                        <span class="form-label">Nama</span>
-                        <input type="text" name="your-name" placeholder="Nama Lengkap" aria-label="Nama Lengkap" required>
-                    </div>
-                
-                    <div class="input-set">
-                        <span class="form-label">Email</span>
-                        <input type="email" name="your-email" placeholder="Email" aria-label="Email" required>
-                    </div>
-                
-                    <div class="input-set">
-                        <span class="form-label">Pesan</span>
-                        <textarea name="message" rows="3" placeholder="Tulis pesan Anda di sini..."></textarea>
-                    </div>
-                    <button id="formSubmit" type="submit">Submit</button>
-                </form>
-            </div>
+      <div class="footer-container pop-up">
+        <div id="footer-infoKuliner" class="footer-item">
+          <img id="logo-img" src="./assets/img/logo.png" width="40" />
+          <h5 class="footer-title">Oemah Soenda</h5>
+          <p class="teks-footer">
+            Situs web kuliner yang didedikasikan untuk memperkenalkan kekayaan
+            kuliner Sunda (Oemah Soenda) kepada dunia.
+          </p>
         </div>
+        <div id="footer-linkGroup" class="footer-item">
+          <h5 class="footer-title">Links</h5>
+          <div class="footerLink">
+            <p><a href="./index.html">Home</a></p>
+            <p><a href="./recipes.html">Daftar Makanan</a></p>
+            <p><a href="./where-to-eat.html">Rekomendasi Tempat</a></p>
+            <p><a href="./article.html">Article</a></p>
+            <p><a href="./about.html">About</a></p>
+          </div>
+        </div>
+        <div id="footer-form" class="footer-item">
+          <form method="post" name="git-form">
+            <h5 class="footer-title">Get In Touch!</h5>
+            <div class="input-set">
+              <span class="form-label">Nama</span>
+              <input
+                type="text"
+                name="your-name"
+                placeholder="Nama Lengkap"
+                aria-label="Nama Lengkap"
+                required
+              />
+            </div>
+
+            <div class="input-set">
+              <span class="form-label">Email</span>
+              <input
+                type="email"
+                name="your-email"
+                placeholder="Email"
+                aria-label="Email"
+                required
+              />
+            </div>
+
+            <div class="input-set">
+              <span class="form-label">Pesan</span>
+              <textarea
+                name="message"
+                rows="3"
+                placeholder="Tulis pesan Anda di sini..."
+              ></textarea>
+            </div>
+            <button id="formSubmit" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
     </footer>
 
     <script src="./js/GIT-Form.js"></script>
-</body>
+  </body>
 </html>

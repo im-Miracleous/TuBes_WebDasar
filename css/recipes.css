@@ -66,7 +66,7 @@ main {
 }
 
 @media (max-width: 920px) {
-    /* RECIPES PAGE */
+  /* RECIPES PAGE */
 
   .grid-container {
     display: grid;
