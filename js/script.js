@@ -15,19 +15,6 @@ $(document).ready(function() {
         $closeIcon.css('display', 'none');
     });
 
-    // // Dropdown menu: only open on hover of the link itself, not the whole li
-    // const $dropdownLi = $('.has-dropdown');
-    // const $dropdownLink = $dropdownLi.children('a');
-    // $dropdownLi.on('mouseenter', function() {
-    //     $(this).addClass('open');
-    // });
-    // $dropdownLi.on('mouseleave', function() {
-    //     $(this).removeClass('open');
-    // });
-    // // Remove previous mouseover handlers if any
-    // $dropdownLink.off('mouseover');
-    // $(document).off('mouseover');
-
     // Smooth Scroll
     const $showMeBtn = $('.banner-button > button');
     const $judul = $('.judul').first();
